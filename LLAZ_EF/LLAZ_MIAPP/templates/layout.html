@@ -1,52 +1,28 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
-
-
-
 <head>
-
     <meta charset="utf=8" />
-
     <title>
-
-        {% block title %}
-
-        
-
+        {% block title %}    
         {% endblock %}
-
         | LLanos - Arcos - Zarate
-
     </title>
-
     {% load static %}
-  
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
-
     <header>
-        <div id="logotipo">
+        <div id="logo">
             <img src="{% static 'images/LogoUntels.png' %}" />
-           
         </div>
-    </header>
+        <div id="logotipoh1" style="text-align: center"> UNIVERSIDAD NACIONAL TECNOLÓGICA DE LIMA SUR</div>
 
+    </header>
 </head>
 
+
+
 <body>
-
     {% block content %}
-
-
-
-
-   
-
     {% endblock %}
-
-    
-
 </body>
 
 

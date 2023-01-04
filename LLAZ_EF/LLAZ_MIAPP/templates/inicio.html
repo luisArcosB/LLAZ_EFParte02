@@ -4,27 +4,50 @@
 
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <title> {% block title %}{% endblock title %} </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+</head>
 
-<h1>MENÚ</h1>
+<body>
+        <div class="nav">
+            <ul>
 
-<br>
+                <li><a href="{% url 'saludo' %}">Inicio</a></li>
+                <li><a href="{% url 'ruta_integrantes' %}">Integrantes</a></li>
+                <li><a href="{% url 'crear_docente' %}">Crear docente</a></li>
+                <li><a href="{% url 'listar_docente' %}">Listar docentes</a></li>
+                <li><a>Crear curso</a></li>
+                <li><a>Listar cursos</a></li>
+            </ul>
+        </div>
 
-<br>
+        <div class="main">
+            {% block main %}
+            {% endblock main %}
+        </div>
 
-<br>
+    </div>
 
-<ul>
+    
 
-    <li><a href="{% url 'saludo' %}">Inicio</a></li>
+</body>
 
-    <li><a href="{% url 'ruta_integrantes' %}">Integrantes</a></li>
+</html>
 
-    <li><a >Crear Docente</a></li>
-    <li><a >Listar Docente</a></li>
 
-    <li><a >Crear curso</a></li>
-    <li><a >Listar curso</a></li>
 
-</ul>
+
+
+
+
+
+
 
 {% endblock %}
