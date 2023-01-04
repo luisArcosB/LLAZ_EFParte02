@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+
+
+
+<h1>AGREGAR Docente</h1> 
+
+
+
+
+<form action="{% url 'crear_docente' %}" method="POST">
+
+    {% csrf_token %}
+
+
+
+
+    {{form}}
+
+    <button  type="submit">Agregar</button>
+
+   
+
+</form>
+
+
+
+
+
+
+
+{% endblock %}

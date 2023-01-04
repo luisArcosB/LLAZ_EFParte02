@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+
+
+
+<head>
+
+    <meta charset="utf=8" />
+
+    <title>
+
+        {% block title %}
+
+        
+
+        {% endblock %}
+
+        | LLanos - Arcos - Zarate
+
+    </title>
+
+    {% load static %}
+  
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+
+    <header>
+        <div id="logotipo">
+            <img src="{% static 'images/LogoUntels.png' %}" />
+           
+        </div>
+    </header>
+
+</head>
+
+<body>
+
+    {% block content %}
+
+
+
+
+   
+
+    {% endblock %}
+
+    
+
+</body>
+
+
+
+
+</html>
